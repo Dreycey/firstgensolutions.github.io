@@ -2,12 +2,35 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <!-- POP UP JS BUTTON -->
+ // load cloudflare icons
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+  <script src="https://formspree.io/js/formbutton-v0.min.js" defer></script>
+  <script>
+    window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+    formbutton("create", {
+      action: "https://formspree.io/mrgpbjqn",
+      buttonImg: "<i class='fas fa-comment' style='font-size:20px'/>",  // <--new button icon
+     onResponse: function(ok, setStatus) {
+        if (ok) {
+          setStatus("Your request was received. We'll be in touch shortly.");
+        } else {
+          setStatus("<span style='color:red'>There was a problem. We've been notified.</span>");
+        }
+      },
+    });
+  </script>
+
+
+  </script><link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <title>FirstGen Solutions Home</title>
     <meta name="description" content="Science">
     <meta name="keywords" content="drug development tool">
+
 </head>
+
+
 
 <body>
     <div class="site-branding">
@@ -37,6 +60,9 @@
     <div class="header-text"><h1>Welcome to FirstGen Solutions</h1></div>
     <div class="body-text">	
         <p>We offer a stem-cell-based platform that tests the safety of medications. Our high-throughput solution removes the need for animal testing so pharmaceutical research teams can focus on maximizing medication efficacy and reach a higher level of standard-of-care.</p>
+    
     <img src="img/firstgenlogo.png">
     </div>
+
 </body></html>
+
